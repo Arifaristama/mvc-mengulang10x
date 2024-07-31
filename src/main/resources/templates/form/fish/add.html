@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<h1> Add Fish </h1>
+<form th:action="@{~/fish/save}" method="post">
+
+    <label for="id"> ID </label> <br>
+    <input name="id" type="text" id="id" placeholder="Masukkan ID"> <br>
+
+    <label for="nama"> Nama </label> <br>
+    <input name="nama" type="text" id="nama" placeholder="Masukkan Nama"> <br>
+
+    <label for="bobot"> Bobot </label> <br>
+    <input name="bobot" type="text" id="bobot"> <br>
+
+    <label for="warna"> Warna</label> <br>
+    <input name="warna" type="text" id="warna"> <br>
+
+    <label for="habitat"> Habitat </label> <br>
+    <input name="habitat" type="text" id="habitat"> <br>
+
+    <button type="submit"> Simpan </button>
+    <button>
+        <a th:href="@{~/fish}"> Kembali </a>
+    </button>
+</form>
+</body>
+</html>

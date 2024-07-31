@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<h1> Add Fruits </h1>
+<form th:action="@{~/fruits/save}" method="post">
+
+    <label for="id"> ID </label> <br>
+    <input type="text" name="id" id="id" placeholder="Masukkan ID"> <br>
+
+    <label for="nama"> Nama </label> <br>
+    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama"> <br>
+
+    <label for="warna"> Warna </label> <br>
+    <input type="text" name="warna" id="warna"> <br>
+
+    <label for="harga"> Harga </label> <br>
+    <input type="text" name="harga" id="harga" placeholder="Masukkan Harga"> <br>
+
+    <label for="rasa"> Rasa </label> <br>
+    <select id="rasa" name="rasa">
+        <option value="Manis"> Manis </option>
+        <option value="Pahit"> Pahit </option>
+        <option value="Asam"> Asam </option>
+    </select> <br>
+
+    <button type="submit"> Simpan </button>
+    <button>
+        <a th:href="@{~/fruits}"> Kembali </a>
+    </button>
+</form>
+</body>
+</html>

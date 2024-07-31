@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animal</title>
+</head>
+<body>
+<h3> Animal App </h3>
+<button>
+    <a th:href="@{~/animal/add}"> new animal</a>
+</button>
+<table border="1">
+    <thead>
+    <tr>
+        <th> Id </th>
+        <th> Nama </th>
+        <th> Umur </th>
+        <th> Gender </th>
+        <th> Jenis </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="data : ${animal}">
+        <td th:text="${data.id}"></td>
+        <td th:text="${data.nama}"></td>
+        <td th:text="${data.umur}"></td>
+        <td th:text="${data.gender}"></td>
+        <td th:text="${data.jenis}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

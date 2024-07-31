@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <style>
+        header{
+            background-color: gray;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        article{
+            padding: 20px;
+            width: 100%;
+            background-color: white;
+        }
+        footer{
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Web Pendidikan</h1>
+</header>
+<nav>
+    <ul>
+        <li> <a th:href="@{~/form}"> Daftar </a></li>
+        <li> <a href=""> Artikel </a> </li>
+        <li> <a href=""> Kontak Kami </a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <h1> Belajar Html </h1>
+        <p> Isi Belajar Html </p>
+    </article>
+    <article>
+        <h1> Belajar Css </h1>
+        <p> Isi Belajar Css </p>
+    </article>
+</section>
+<footer>
+    <p> Powered By Arif Aristama <time datetime="2024"> 2024</time> </p>
+</footer>
+</body>
+</html>

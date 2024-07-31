@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>person</title>
+</head>
+<body>
+<h3>Person App</h3>
+<button>
+    <a th:href="@{~/person/add}">new person</a>
+</button>
+<table border="1">
+    <thead>
+    <tr>
+        <th> id </th>
+        <th> Nama </th>
+        <th> tempatTgl </th>
+        <th> Alamat </th>
+        <th> Agama </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="data : ${person}">
+        <td th:text="${data.id}"></td>
+        <td th:text="${data.name}"></td>
+        <td th:text="${data.tempatTgl}"></td>
+        <td th:text="${data.alamat}"></td>
+        <td th:text="${data.agama}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

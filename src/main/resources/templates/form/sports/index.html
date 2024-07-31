@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports</title>
+</head>
+<body>
+<h3> Sports App </h3>
+<button>
+    <a th:href="@{~/sports/add}"> New Sports</a>
+</button>
+<table border="1">
+    <thead>
+    <tr>
+        <th> ID </th>
+        <th> Nama </th>
+        <th> Pemain </th>
+        <th> Asal </th>
+        <th> Tempat </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="data : ${sports}">
+        <td th:text="${data.id}"></td>
+        <td th:text="${data.nama}"></td>
+        <td th:text="${data.pemain}"></td>
+        <td th:text="${data.asal}"></td>
+        <td th:text="${data.tempat}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

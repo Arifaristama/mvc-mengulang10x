@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml>
+<head>
+    <meta charset="UTF-8>
+    <title>Person Add</title>
+</head>
+<body>
+<h1>Add Person</h1>
+<form th:action="@{~/person/save}" method="post">
+
+    <label for="id">id</label> <br/>
+    <input type="text" name="id" id="id" placeholder="Masukkan Id"><br/>
+
+    <label for="name">Nama</label> <br/>
+    <input type="text" name="name" id="name" placeholder="Masukkan Nama"><br/>
+
+    <label for="tempatTgl">TempatTgl</label> <br/>
+    <input type="text" name="tempatTgl" id="tempatTgl" placeholder="Masukkan TempatTgl lahir"><br/>
+
+    <label for="alamat">Alamat</label> <br/>
+    <input type="text" name="alamat" id="alamat" placeholder="Masukkan ALamat"><br/>
+
+    <label for="agama">Agama</label> <br/>
+    <input type="text" name="agama" id="agama" placeholder="Masukkan Agama"><br/>
+
+    <button type="submit">Save</button>
+    <button>
+        <a th:href="@{~/person}">Back</a>
+    </button>
+</form>
+</body>
+</html>

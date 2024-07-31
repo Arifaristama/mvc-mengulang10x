@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<h1> Add Sports </h1>
+<form th:action="@{~/sports/save}" method="post">
+
+    <label for="id"> ID </label> <br>
+    <input name="id" type="text" id="id"> <br>
+
+    <label for="nama"> Nama </label> <br>
+    <input name="nama" type="text" id="nama"> <br>
+
+    <label for="pemain"> Pemain </label> <br>
+    <input name="pemain" type="text" id="pemain"> <br>
+
+    <label for="asal"> Asal </label> <br>
+    <input name="asal" type="text" id="asal"> <br>
+
+    <label for="tempat"> Tempat </label> <br>
+    <select name="tempat" id="tempat">
+        <option value="indoor"> Indoor </option>
+        <option value="outdoor"> Outdoor </option>
+        <option value="in/outdoor"> In/Outdoor </option>
+    </select> <br>
+
+    <button type="submit"> Simpan </button>
+    <button>
+        <a th:href="@{~/sports}"> Kembali </a>
+    </button>
+</form>
+</body>
+</html>

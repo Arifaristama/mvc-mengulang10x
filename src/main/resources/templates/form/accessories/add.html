@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<h1> Add Person </h1>
+<form th:action="@{~/accessories/save}" method="post">
+
+    <label for="id"> ID </label> <br>
+    <input type="text" name="id" id="id" placeholder="Masukkan ID"> <br>
+
+    <label for="nama"> Nama </label> <br>
+    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama"> <br>
+
+    <label for="bahan"> Bahan </label> <br>
+    <input type="text" name="bahan" id="bahan" placeholder="Isi Nama Bahan"> <br>
+
+    <label for="warna"> Warna </label> <br>
+    <input type="text" name="warna" id="warna" placeholder="Masukkan Warna"> <br>
+
+    <label for="unisex"> Unisex </label> <br>
+    <select id="unisex" name="unisex">
+        <option value="Yes"> Yes </option>
+        <option value="Men Only"> Men Only </option>
+        <option value="Women Only"> Women Only </option>
+    </select> <br>
+
+    <button type="submit"> Simpan </button>
+    <button>
+        <a th:href="@{~/accessories}"> Kembali </a>
+    </button>
+</form>
+</body>
+</html>

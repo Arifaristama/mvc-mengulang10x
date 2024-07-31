@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>accessories</title>
+</head>
+<body>
+<h3> Accessories App </h3>
+<button>
+    <a th:href="@{~/accessories/add}"> Tambah </a>
+</button>
+<table border="1">
+    <thead>
+    <tr>
+        <th> ID </th>
+        <th> Nama </th>
+        <th> Bahan </th>
+        <th> Warna </th>
+        <th> Unisex </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="data : ${accessories}">
+        <td th:text="${data.id}"></td>
+        <td th:text="${data.nama}"></td>
+        <td th:text="${data.bahan}"></td>
+        <td th:text="${data.warna}"></td>
+        <td th:text="${data.unisex}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
