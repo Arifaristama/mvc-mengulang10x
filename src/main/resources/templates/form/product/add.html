@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<h1> Add Product </h1>
+<form th:action="@{~/product/save}" method="post">
+
+    <label for="id"> ID </label> <br>
+    <input name="id" type="text" id="id"> <br>
+
+    <label for="nama"> Nama </label> <br>
+    <input name="nama" type="text" id="nama"> <br>
+
+    <label for="brand"> Brand </label> <br>
+    <input name="brand" type="text" id="brand"> <br>
+
+    <label for="harga"> Harga </label> <br>
+    <input name="harga" type="text" id="harga"> <br>
+
+    <label for="berat"> Berat </label> <br>
+    <input name="berat" type="text" id="berat"> <br>
+
+    <button type="submit"> Simpan </button>
+    <button>
+        <a th:href="@{~/product}"> Kembali </a>
+    </button>
+</form>
+</body>
+</html>

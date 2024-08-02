@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sports</title>
+    <title>Snack</title>
 </head>
 <body>
-<h3> Sports App </h3>
+<h3> Snack app </h3>
 <button>
-    <a th:href="@{~/sports/add}"> New Sports</a>
+    <a th:href="@{~/snack/add}"> New Snack </a>
 </button>
 <table border="1">
     <thead>
     <tr>
         <th> ID </th>
         <th> Nama </th>
-        <th> Pemain </th>
-        <th> Asal </th>
-        <th> Tempat </th>
+        <th> Brand </th>
+        <th> Varian Rasa </th>
+        <th> Berat </th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="data : ${sports}">
+    <tr th:each="data : ${snack}">
         <td th:text="${data.id}"></td>
         <td th:text="${data.nama}"></td>
-        <td th:text="${data.pemain}"></td>
-        <td th:text="${data.asal}"></td>
-        <td th:text="${data.tempat}"></td>
+        <td th:text="${data.brand}"></td>
+        <td th:text="${data.varRasa}"></td>
+        <td th:text="${data.berat}"></td>
     </tr>
     </tbody>
 </table>

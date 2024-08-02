@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<h1> Add Singer </h1>
+<form th:action="@{~/singer/save}" method="post">
+
+    <label for="id"> ID </label> <br>
+    <input name="id" type="text" id="id"> <br>
+
+    <label for="nama"> Nama </label> <br>
+    <input name="nama" type="text" id="nama"> <br>
+
+    <label for="asal"> Asal </label> <br>
+    <input name="asal" type="text" id="asal"> <br>
+
+    <label for="genre"> Genre </label> <br>
+    <input name="genre" type="text" id="genre"> <br>
+
+    <label for="lagu"> Lagu </label> <br>
+    <input name="lagu" type="text" id="lagu"> <br>
+
+    <button type="submit"> Simpan </button>
+    <button>
+        <a th:href="@{~/singer}"> Kembali</a>
+    </button>
+</form>
+</body>
+</html>
